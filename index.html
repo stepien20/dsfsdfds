@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Cos</title>
+
+    <link rel="stylesheet" href="main.css">
+<script src="main.js" defer></script>
+</head>
+<body>
+    
+    <form>
+<label for="element">Podaj nazwę elementu: 
+    <select name="element" id="element">
+        <optgroup label="podstawowe">
+            <option value="p">p</option>
+            <option value="h1">h1</option>
+            <option value="h2">h2</option>
+            <option value="h3">h3</option>
+            <option value="h4">h4</option>
+            <option value="h5">h5</option>
+            <option value="h6">h6</option>
+        </optgroup>
+        <optgroup label="znaczniki sekcji"></optgroup>
+        <option value="main">main</option>
+        <option value="header">header</option>
+        <option value="footer">footer</option>
+        <option value="section">section</option>
+        <option value="article">article</option>
+        <option value="aside">aside</option>
+        <option value="div">div</option>
+    </select>
+</label>
+<label for="text">Podaj tekst w elemencie: <input type="text" id="text" name="text"></label>
+<label for="date">Podaj date w elemencie<input type="date" id="date" name="date"></label>
+<label for="padding">Padding w elemencie(rem): <input type="range" min="0" max="1" step="0.2" id="padding" name="padding"></label>
+<label for="margin">Margines w elemencie(rem): <input type="range" min="0" max="1" step="0.2" id="margin" name="margin"></label>
+<label for="dlug">Odleglosc między literami (rem): <input type="number" min="0" step="0.2" id="dlug" name="dlug" value="0"></label>
+<label for="font_color">Podaj kolor czcionki: <input type="color" id="font_color" name="font_color"></label>
+<label for="back_color">Podaj kolor tła elemntu: <input type="color" id="back_color" name="back_color"></label>
+<fieldset>
+    <legend>Wyrównanie tekstu</legend>
+<label for="text_allign">
+lewo:<input type="radio" id="lewo" name="text_allign" value="left" checked>
+środek:<input type="radio" id="srodek" name="text_allign" value="center">
+prawo:<input type="radio" id="prawo" name="text_allign" value="right">
+</label>   
+</fieldset>
+<fieldset>
+    <legend>Ozdoba tekstu</legend>
+<label for="ozdoba">
+podkreślenie:<input type="checkbox" id="podkreślenie" name="ozdoba" value="underline">
+przekreślenie:<input type="checkbox" id="przekreślenie" name="ozdoba" value="line-through">
+nadkreślenie:<input type="checkbox" id="nadkreślenie" name="ozdoba" value="overline">
+</label>   
+</fieldset>
+<button id="but1">Utwórz</button>
+    </form>
+    <div id="display">
+<p >
+    
+</p>
+    </div>
+</body>
+</html>
